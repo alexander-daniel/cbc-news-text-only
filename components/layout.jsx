@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { withRouter } from "next/router";
 
 export default withRouter(({ title, children, router }) => {
@@ -13,7 +14,7 @@ export default withRouter(({ title, children, router }) => {
         <small>{new Date().toDateString()}</small>
       </div>
 
-      {router.pathname === "/" ? null : <a href="/">{"Home"}</a>}
+      {router.pathname === "/" ? null : <Link href="/">{"Home"}</Link>}
 
       <h1>{title}</h1>
 
