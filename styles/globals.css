@@ -1,15 +1,25 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Merriweather';
   line-height: 1.6;
   color: #222;
-  max-width: 40rem;
+  max-width: 36rem;
   padding: 2rem;
   margin: auto;
   background: #fafafa;
 }
 
 a {
-  color: rgb(68, 57, 129);
+  color: rgb(70, 56, 150);
+  line-height: 1.4rem;
+}
+
+a:visited {
+  color: rgb(124, 119, 152);
 }
 
 h1,
@@ -21,14 +31,18 @@ h6,
 strong {
   font-family: serif;
   color: #111;
+  margin-bottom: 0px;
 }
 
 ul {
   padding-left: 0px;
+  list-style-type: none;
 }
 
 li {
-  margin-bottom: 5px;
+  padding-bottom: 15px;
+  display: block;
+  line-height: 1.4rem;
 }
 
 h2 {

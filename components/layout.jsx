@@ -10,13 +10,7 @@ export default withRouter(({ title, children, router }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div>
-        <small>{new Date().toDateString()}</small>
-      </div>
-
       {router.pathname === "/" ? null : <Link href="/">{"Home"}</Link>}
-
-      <h1>{title}</h1>
 
       {children}
     </>
