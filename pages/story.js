@@ -8,11 +8,10 @@ const CBCNewsStory = (props) => {
 
   return (
     <Layout title={`CBC | ${title}`}>
-      <p>
-        <strong>{title}</strong>
-      </p>
 
-      <p>{`[ ${byline} ]`}</p>
+      <h2>{title}</h2>
+      <small style={{ fontSize: "8pt" }}>{`[ ${byline} ]`}</small>
+      <hr />
 
       {story.map((paragraph, i) => (
         <p key={i}>{paragraph}</p>
